@@ -26,12 +26,12 @@ public class LinkedListMerge{
                 return head2;
 
         Node temp = head1;
-            while(temp.data != null){
+            while(temp != null && temp.next != null){
                 temp = temp.next;
             }
 
             temp.next = head2;
-        }
+        
         return head1;
     } 
 
